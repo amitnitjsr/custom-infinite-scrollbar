@@ -1,0 +1,1 @@
+const pre = "GLOBAL_";
