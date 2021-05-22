@@ -67,10 +67,6 @@ class App extends Component {
     }
 
     loadMore() {
-        // this.setState({ loading: true });
-        // setTimeout(() => {
-        //     this.setState({ items: this.state.items + 20, loading: false });
-        // }, 2000);
         this.fetchMoreData();
     }
 
@@ -95,6 +91,11 @@ class App extends Component {
                         clickOnPhoto={this.clickOnPhotoHandler}
                     />
                 </ul>
+                {!this.state.hasMore && (
+                    <p className="App-intro">
+                        You have seen it All!
+                    </p>
+                )}
                 {this.state.loading
                     ? <p className="App-intro">
                         loading ...
