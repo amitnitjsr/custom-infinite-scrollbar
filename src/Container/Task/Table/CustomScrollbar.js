@@ -58,14 +58,6 @@ class App extends Component {
         }
     }
 
-    showItems() {
-        var items = [];
-        for (var i = 0; i < this.state.items; i++) {
-            items.push(<li key={i}>Item {i}</li>);
-        }
-        return items;
-    }
-
     loadMore() {
         this.fetchMoreData();
     }
